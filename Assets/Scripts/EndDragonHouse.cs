@@ -26,7 +26,7 @@ public class EndDragonHouse : MonoBehaviour
 
     void OnTriggerEnter(Collider other) 
     { // OnCollisionEnter
-        if (other.tag == "Player" )//&& nb_cats_on_scene <= 0) 
+        if (other.tag == "Player" && nb_cats_on_scene <= 0) 
             SceneManager.LoadScene("Terrain");
     }
 }
